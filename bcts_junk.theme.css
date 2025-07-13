@@ -1,0 +1,77 @@
+/**
+ * @name bcts junk
+ * @description theme with the stuff i would use in quickcss
+ * @author a bunch of people
+ * @version 1
+*/
+
+/*
+    Most snippets are from the vencord discord server. search the title inside of #css-snippets and you will find the original author.
+*/
+
+/* 
+    Main Theme
+    Midnight catppuccin mocha flavor by refact0r
+*/
+@import url('https://refact0r.github.io/midnight-discord/themes/flavors/midnight-catppuccin-mocha.theme.css');
+
+/* 
+    Cozier Profile Popouts
+    by krammeth
+*/
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped.css');
+
+/* 
+    Simplified Panels Area
+    by dav154
+*/
+@import url(https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css);
+
+/* 
+    Stay off the banner, bubble!
+    by augenbl1ck
+*/
+@import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/customStatusBubble.css");
+
+/* 
+    Auto-Hide Floating Sidebar
+    by mar.ezxc
+
+    Slightly modified to be bigger and slightly transparent when not hovered.
+*/
+nav[class*="guilds"]::-webkit-scrollbar {
+  display: none !important;
+}
+
+nav[class*="guilds"] {
+  --paddingY: 15px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  max-height: 80vh;
+  overflow-y: auto;
+  transform: translate(-75%, -50%) !important;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding-top: var(--paddingY);
+  padding-bottom: var(--paddingY);
+  border: 2.2px solid #242424;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px 5px;
+  height: 20vh;
+  opacity: 40%;
+}
+
+nav[class*="guilds"] div {
+  transform: scale(0);
+}
+
+nav[class*="guilds"]:hover {
+  transform: translate(0%, -50%) !important;
+  height: auto;
+  opacity: 100%;
+}
+
+nav[class*="guilds"]:hover div {
+  transform: scale(100%);
+}
+
