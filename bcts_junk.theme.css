@@ -34,6 +34,42 @@
 @import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/customStatusBubble.css");
 
 /* 
+    Better Message Buttons
+    by andrew6rant
+*/
+@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtonsAlternate.theme.css");
+
+/*
+  Change some variables :p
+*/
+body {
+  /*
+    Change dm button to miku swing
+  */
+  --dms-background-image-url: url("https://media.discordapp.net/attachments/1335778384784916561/1335781963197583462/AN4AscT.gif?ex=68784fe5&is=6876fe65&hm=4b1524f59fb044f581bb18e3bd4b86f57860c3187b43d3d7c50674fbeb306cfb&=&width=160&height=160");
+}
+
+/* 
+    Shiggy Loading...
+    by nspg911
+*/
+.content_a2f514 {
+    display: flex;
+    flex-direction: column;
+    > .spinner_a2f514 { display: none }
+    &:before {
+        display: block;
+        height: 128px;
+        position: relative;
+        content: url(https://raw.githubusercontent.com/Vencord/Vesktop/refs/heads/main/static/shiggy.gif);
+        image-rendering: pixelated;
+         align-content: center;
+         scale: 3.125;
+         margin-bottom: 96px;
+    }
+}
+
+/* 
     Auto-Hide Floating Sidebar
     by mar.ezxc
 
@@ -57,7 +93,7 @@ nav[class*="guilds"] {
   padding-bottom: var(--paddingY);
   border: 2.2px solid #242424;
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px 5px;
-  height: 20vh;
+  height: 30vh;
   opacity: 40%;
 }
 
@@ -74,4 +110,3 @@ nav[class*="guilds"]:hover {
 nav[class*="guilds"]:hover div {
   transform: scale(100%);
 }
-
