@@ -16,12 +16,6 @@
 @import url('https://refact0r.github.io/midnight-discord/themes/flavors/midnight-catppuccin-mocha.theme.css');
 
 /* 
-    Cozier Profile Popouts
-    by krammeth
-*/
-@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped.css');
-
-/* 
     Simplified Panels Area
     by dav154
 */
@@ -109,4 +103,5 @@ nav[class*="guilds"]:hover {
 
 nav[class*="guilds"]:hover div {
   transform: scale(100%);
+
 }
